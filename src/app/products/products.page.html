@@ -8,17 +8,29 @@
 </ion-header>
 
 <ion-content>
-
-
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle>AMIRI</ion-card-subtitle>
-      <ion-card-title>Jaqueta jeans com estampa de logo</ion-card-title>
+      <ion-card-title>
+        Jaqueta jeans com estampa de logo
+      </ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
-      Multicolorido/estampado, algodão, estampa corrida de logo, estampa de palmeira, gola clássica, fechamento frontal
-      por botões, dois bolsos com abas no busto, mangas longas e dois bolsos fenda nas laterais.
+      <span class="description hidden">
+        Multicolorido/estampado, algodão, estampa corrida de logo, estampa de palmeira, gola clássica, fechamento frontal
+        por botões, dois bolsos com abas no busto, mangas longas e dois bolsos fenda nas laterais.
+      </span>
+
+      <button (click)="showProductDescrition($event)" class="read-content">+</button>
+
+      <ion-item-divider>
+        <span class="product" value="149.90" name="Jaqueta jeans com estampa de logo" id="1">
+          $ 149,90
+        </span>
+
+        <button (click)="addProductInCart($event)" class="buy-button">Buy</button>
+      </ion-item-divider>
     </ion-card-content>
   </ion-card>
 
@@ -29,8 +41,20 @@
     </ion-card-header>
 
     <ion-card-content>
-      Tira dupla na abertura, fechamento frontal deslocado, patch de logo na lingueta, bico arredondado, logo na
-      palmilha e solado flat de borracha.
+      <span class="description hidden">
+        Tira dupla na abertura, fechamento frontal deslocado, patch de logo na lingueta, bico arredondado, logo na
+        palmilha e solado flat de borracha.
+      </span>
+
+      <button (click)="showProductDescrition($event)" class="read-content">+</button>
+
+      <ion-item-divider>
+        <span class="product" value="38.00" name="Tênis B Runner" id="2">
+          $ 38,00
+        </span>
+
+        <button (click)="addProductInCart($event)" class="buy-button">Buy</button>
+      </ion-item-divider>
     </ion-card-content>
   </ion-card>
 
@@ -41,8 +65,19 @@
     </ion-card-header>
 
     <ion-card-content>
-      Detalhe de logo Greca, detalhe cabeça de Medusa e aro sinete. Material: bronze banhado a ouro.
+      <span class="description hidden">
+        Detalhe de logo Greca, detalhe cabeça de Medusa e aro sinete. Material: bronze banhado a ouro.
+      </span>
+
+      <button (click)="showProductDescrition($event)" class="read-content">+</button>
+
+      <ion-item-divider>
+        <span class="product" value="523.99" name="Anel de sinete Medusa" id="3">
+          $ 523,99
+        </span>
+
+        <button (click)="addProductInCart($event)" class="buy-button">Buy</button>
+      </ion-item-divider>
     </ion-card-content>
   </ion-card>
-
 </ion-content>
